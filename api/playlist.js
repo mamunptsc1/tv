@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   ];
 
   let channels = [];
-  let addedUrls = new Set();
+  let added = new Set();
 
   for (const url of urls) {
 
@@ -19,40 +19,21 @@ export default async function handler(req, res) {
 
       for (let i = 0; i < lines.length; i++) {
 
-        const line = lines[i];
+        if (lines[i].startsWith("#EXTINF")) {
 
-        if (line.startsWith("#EXTINF")) {
-
-          const info = line;
+          const info = lines[i];
           const stream = lines[i + 1]?.trim();
 
           if (
             stream &&
             stream.startsWith("http") &&
-            !addedUrls.has(stream)
+            !added.has(stream)
           ) {
 
-            // DEAD LINK CHECK
-            try {
+            added.add(stream);
 
-              const check = await fetch(stream, {
-                method: "HEAD"
-              });
-
-              if (check.ok) {
-
-                addedUrls.add(stream);
-
-                channels.push(info);
-                channels.push(stream);
-
-              }
-
-            } catch (e) {
-
-              console.log("Dead:", stream);
-
-            }
+            channels.push(info);
+            channels.push(stream);
 
           }
 
@@ -60,9 +41,9 @@ export default async function handler(req, res) {
 
       }
 
-    } catch (error) {
+    } catch (err) {
 
-      console.log("Playlist Error:", url);
+      console.log("Error:", url);
 
     }
 
