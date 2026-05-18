@@ -5,68 +5,73 @@ export default async function handler(req, res) {
     "https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.m3u"
   ];
 
-  let finalPlaylist = "#EXTM3U\n";
-  let addedStreams = new Set();
+  const logoApi =
+    "https://raw.githubusercontent.com/mamunptsc1/iptv/main/channels.json";
 
-  for (const url of urls) {
+  let merged = "#EXTM3U\n";
 
-    try {
+  try {
 
-      const response = await fetch(url);
-      const text = await response.text();
+    // LOAD LOGO JSON
+    const logoRes = await fetch(logoApi);
+    const logoData = await logoRes.json();
 
-      const lines = text.split("\n");
+    const logoMap = {};
 
-      for (let i = 0; i < lines.length; i++) {
+    logoData.channels.forEach(ch => {
 
-        const line = lines[i].trim();
+      logoMap[ch.name.trim()] = ch.logo;
 
-        if (line.startsWith("#EXTINF")) {
+    });
 
-          let stream = "";
+    // LOAD PLAYLISTS
+    const responses = await Promise.all(
+      urls.map(url => fetch(url))
+    );
 
-          // NEXT VALID URL FIND
-          for (let j = i + 1; j < lines.length; j++) {
+    const texts = await Promise.all(
+      responses.map(r => r.text())
+    );
 
-            const nextLine = lines[j].trim();
+    const lines = texts.join("\n").split("\n");
 
-            if (
-              nextLine.startsWith("http")
-            ) {
-              stream = nextLine;
-              break;
-            }
+    for (let i = 0; i < lines.length; i++) {
 
-            if (
-              nextLine.startsWith("#EXTINF")
-            ) {
-              break;
-            }
+      let line = lines[i];
 
-          }
+      if (line.startsWith("#EXTINF")) {
 
-          if (
-            stream &&
-            !addedStreams.has(stream)
-          ) {
+        const channelName =
+          line.split(",").pop().trim();
 
-            addedStreams.add(stream);
+        const logo =
+          logoMap[channelName];
 
-            finalPlaylist +=
-              line + "\n" +
-              stream + "\n";
+        if (logo) {
 
-          }
+          // REMOVE OLD LOGO
+          line = line.replace(
+            /tvg-logo=".*?"/g,
+            ""
+          );
+
+          // ADD NEW LOGO
+          line = line.replace(
+            "#EXTINF:-1",
+            `#EXTINF:-1 tvg-logo="${logo}"`
+          );
 
         }
 
       }
 
-    } catch (err) {
-
-      console.log("Playlist Error:", url);
+      merged += line + "\n";
 
     }
+
+  } catch (e) {
+
+    console.log(e);
 
   }
 
@@ -75,6 +80,6 @@ export default async function handler(req, res) {
     "audio/x-mpegurl"
   );
 
-  res.status(200).send(finalPlaylist);
+  res.status(200).send(merged);
 
 }
