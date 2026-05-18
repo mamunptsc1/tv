@@ -1,73 +1,33 @@
 export default async function handler(req, res) {
 
-  const urls = [
-    "https://raw.githubusercontent.com/mamunptsc1/iptv/refs/heads/main/bd.m3u",
-    "https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.m3u"
-  ];
-
-  const logoApi =
+  const jsonUrl =
     "https://raw.githubusercontent.com/mamunptsc1/iptv/main/channels.json";
 
-  let merged = "#EXTM3U\n";
+  const m3uUrl =
+    "https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.m3u";
+
+  let playlist = "#EXTM3U\n";
 
   try {
 
-    // LOAD LOGO JSON
-    const logoRes = await fetch(logoApi);
-    const logoData = await logoRes.json();
+    // JSON CHANNELS
+    const jsonRes = await fetch(jsonUrl);
+    const jsonData = await jsonRes.json();
 
-    const logoMap = {};
+    jsonData.channels.forEach(channel => {
 
-    logoData.channels.forEach(ch => {
-
-      logoMap[ch.name.trim()] = ch.logo;
+      playlist +=
+`#EXTINF:-1 tvg-logo="${channel.logo}",${channel.name}
+${channel.url}
+`;
 
     });
 
-    // LOAD PLAYLISTS
-    const responses = await Promise.all(
-      urls.map(url => fetch(url))
-    );
+    // M3U PLAYLIST
+    const m3uRes = await fetch(m3uUrl);
+    const m3uText = await m3uRes.text();
 
-    const texts = await Promise.all(
-      responses.map(r => r.text())
-    );
-
-    const lines = texts.join("\n").split("\n");
-
-    for (let i = 0; i < lines.length; i++) {
-
-      let line = lines[i];
-
-      if (line.startsWith("#EXTINF")) {
-
-        const channelName =
-          line.split(",").pop().trim();
-
-        const logo =
-          logoMap[channelName];
-
-        if (logo) {
-
-          // REMOVE OLD LOGO
-          line = line.replace(
-            /tvg-logo=".*?"/g,
-            ""
-          );
-
-          // ADD NEW LOGO
-          line = line.replace(
-            "#EXTINF:-1",
-            `#EXTINF:-1 tvg-logo="${logo}"`
-          );
-
-        }
-
-      }
-
-      merged += line + "\n";
-
-    }
+    playlist += "\n" + m3uText;
 
   } catch (e) {
 
@@ -80,6 +40,6 @@ export default async function handler(req, res) {
     "audio/x-mpegurl"
   );
 
-  res.status(200).send(merged);
+  res.status(200).send(playlist);
 
 }
