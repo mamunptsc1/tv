@@ -1,43 +1,84 @@
 export default async function handler(req, res) {
 
+  // JSON SOURCE
   const jsonUrl =
     "https://raw.githubusercontent.com/mamunptsc1/iptv/main/channels.json";
 
-  const m3uUrl =
-    "https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.m3u";
+  // M3U SOURCES
+  const m3uUrls = [
+
+    "https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.m3u",
+
+    "https://raw.githubusercontent.com/srhady/AynaOTT/refs/heads/main/aynaott.m3u"
+
+  ];
 
   let playlist = "#EXTM3U\n";
 
   try {
 
-    // JSON CHANNELS
-    const jsonRes = await fetch(jsonUrl);
-    const jsonData = await jsonRes.json();
+    // LOAD JSON
+    const jsonResponse =
+      await fetch(jsonUrl);
 
-    jsonData.channels.forEach(channel => {
+    const jsonData =
+      await jsonResponse.json();
 
-      playlist +=
-`#EXTINF:-1 tvg-logo="${channel.logo}",${channel.name}
+    // JSON → M3U
+    if (jsonData.channels) {
+
+      jsonData.channels.forEach(channel => {
+
+        if (
+          channel.name &&
+          channel.url
+        ) {
+
+          playlist +=
+`#EXTINF:-1 tvg-logo="${channel.logo || ""}",${channel.name}
 ${channel.url}
+
 `;
 
-    });
+        }
 
-    // M3U PLAYLIST
-    const m3uRes = await fetch(m3uUrl);
-    const m3uText = await m3uRes.text();
+      });
 
-    playlist += "\n" + m3uText;
+    }
 
-  } catch (e) {
+    // LOAD ALL M3U
+    const responses =
+      await Promise.all(
 
-    console.log(e);
+        m3uUrls.map(url => fetch(url))
+
+      );
+
+    const texts =
+      await Promise.all(
+
+        responses.map(r => r.text())
+
+      );
+
+    // APPEND M3U
+    playlist += texts.join("\n");
+
+  } catch (error) {
+
+    console.log(error);
 
   }
 
+  // FAST RESPONSE
   res.setHeader(
     "Content-Type",
     "audio/x-mpegurl"
+  );
+
+  res.setHeader(
+    "Cache-Control",
+    "public, max-age=300"
   );
 
   res.status(200).send(playlist);
