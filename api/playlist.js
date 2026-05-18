@@ -1,8 +1,10 @@
 export default async function handler(req, res) {
 
+  // JSON SOURCE
   const jsonUrl =
     "https://raw.githubusercontent.com/mamunptsc1/iptv/main/channels.json";
 
+  // M3U SOURCES
   const m3uUrls = [
 
     "https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.m3u",
@@ -13,31 +15,27 @@ export default async function handler(req, res) {
 
   let playlist = "#EXTM3U\n";
 
-  // DUPLICATE BLOCKER
-  let addedNames = new Set();
-
   try {
 
-    // JSON CHANNELS
+    // LOAD JSON
     const jsonResponse =
       await fetch(jsonUrl);
 
     const jsonData =
       await jsonResponse.json();
 
+    // JSON → M3U
     if (jsonData.channels) {
 
       jsonData.channels.forEach(channel => {
 
-        const name =
-          channel.name.trim().toLowerCase();
-
-        if (!addedNames.has(name)) {
-
-          addedNames.add(name);
+        if (
+          channel.name &&
+          channel.url
+        ) {
 
           playlist +=
-`#EXTINF:-1 tvg-logo="${channel.logo || ""}" group-title="${channel.group || "Live TV"}",${channel.name}
+`#EXTINF:-1 tvg-logo="${channel.logo || ""}",${channel.name}
 ${channel.url}
 
 `;
@@ -48,7 +46,7 @@ ${channel.url}
 
     }
 
-    // M3U PLAYLISTS
+    // LOAD ALL M3U
     const responses =
       await Promise.all(
 
@@ -63,42 +61,8 @@ ${channel.url}
 
       );
 
-    const lines =
-      texts.join("\n").split("\n");
-
-    for (let i = 0; i < lines.length; i++) {
-
-      const line =
-        lines[i];
-
-      if (
-        line.startsWith("#EXTINF")
-      ) {
-
-        const name =
-          line.split(",")
-          .pop()
-          .trim()
-          .toLowerCase();
-
-        const stream =
-          lines[i + 1];
-
-        if (
-          !addedNames.has(name)
-        ) {
-
-          addedNames.add(name);
-
-          playlist +=
-            line + "\n" +
-            stream + "\n";
-
-        }
-
-      }
-
-    }
+    // APPEND M3U
+    playlist += texts.join("\n");
 
   } catch (error) {
 
@@ -106,6 +70,7 @@ ${channel.url}
 
   }
 
+  // FAST RESPONSE
   res.setHeader(
     "Content-Type",
     "audio/x-mpegurl"
