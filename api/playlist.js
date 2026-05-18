@@ -5,8 +5,8 @@ export default async function handler(req, res) {
     "https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.m3u"
   ];
 
-  let channels = [];
-  let added = new Set();
+  let finalPlaylist = "#EXTM3U\n";
+  let addedStreams = new Set();
 
   for (const url of urls) {
 
@@ -19,21 +19,42 @@ export default async function handler(req, res) {
 
       for (let i = 0; i < lines.length; i++) {
 
-        if (lines[i].startsWith("#EXTINF")) {
+        const line = lines[i].trim();
 
-          const info = lines[i];
-          const stream = lines[i + 1]?.trim();
+        if (line.startsWith("#EXTINF")) {
+
+          let stream = "";
+
+          // NEXT VALID URL FIND
+          for (let j = i + 1; j < lines.length; j++) {
+
+            const nextLine = lines[j].trim();
+
+            if (
+              nextLine.startsWith("http")
+            ) {
+              stream = nextLine;
+              break;
+            }
+
+            if (
+              nextLine.startsWith("#EXTINF")
+            ) {
+              break;
+            }
+
+          }
 
           if (
             stream &&
-            stream.startsWith("http") &&
-            !added.has(stream)
+            !addedStreams.has(stream)
           ) {
 
-            added.add(stream);
+            addedStreams.add(stream);
 
-            channels.push(info);
-            channels.push(stream);
+            finalPlaylist +=
+              line + "\n" +
+              stream + "\n";
 
           }
 
@@ -43,14 +64,11 @@ export default async function handler(req, res) {
 
     } catch (err) {
 
-      console.log("Error:", url);
+      console.log("Playlist Error:", url);
 
     }
 
   }
-
-  const finalPlaylist =
-    "#EXTM3U\n" + channels.join("\n");
 
   res.setHeader(
     "Content-Type",
