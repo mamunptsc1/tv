@@ -9,8 +9,6 @@ export default async function handler(req, res) {
 
     "https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.m3u",
 
-    "https://raw.githubusercontent.com/srhady/AynaOTT/refs/heads/main/aynaott.m3u"
-
   ];
 
   let playlist = "#EXTM3U\n";
