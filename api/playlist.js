@@ -8,6 +8,7 @@ export default async function handler(req, res) {
   const m3uUrls = [
 
     "https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.m3u",
+    "https://raw.githubusercontent.com/mamunptsc1/Mamun-tv-playlist/refs/heads/main/new.m3u",
 
   ];
 
