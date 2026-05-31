@@ -145,35 +145,35 @@ http://198.195.239.50:8095/SonyTenSports5/tracks-v1a1/mono.m3u8
 https://webott.viatv.com.np/v0t1/CineplexHD.stream/chunks.m3u8
 #EXTINF:-1, IPL 
 http://kstv.us:8080/live/qdxkt3R5pH/5118349267/15965.m3u8
-#EXTINF:-1,t sport
+#EXTINF:-1,T sport
 https://playztv-apps.pages.dev/tsports/index.m3u8
 
 
-#EXTINF:-1,1. FIFA Plus
+#EXTINF:-1,FIFA Plus
 https://37b4c228.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWZyX0ZJRkFQbHVzRnJlbmNoX0hMUw/6f5437c5-e015-4754-8476-c8c6d27d3a55/1.m3u8
 
-#EXTINF:-1,2. Willow TV
+#EXTINF:-1,Willow TV
 https://tvsen5.aynaott.com/willowhd/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1,3. T Sports HD
+#EXTINF:-1,T Sports HD
 https://tvsen7.aynaott.com/tsports-hd/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1,4. Goal TV HD
 https://streams2.sofast.tv/sofast/goaltv/goaltv_3500k.m3u8
 
-#EXTINF:-1,5. ASports HD
+#EXTINF:-1,ASports HD
 https://tvsen6.aynaott.com/asports/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1,6. Sports Grid
+#EXTINF:-1,Sports Grid
 https://tvsen6.aynaott.com/SportsGrid/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1,7. Star Sports 1 HD
+#EXTINF:-1,Star Sports 1 HD
 https://tvsen7.aynaott.com/sspts1/tracks-v1a1/mono.ts.m3u8
 
 
-#EXTINF:-1,44. CNN Now
+#EXTINF:-1,CNN Now
 https://amg01448-samsungin-cnnnow-samsungin-4npqg.amagi.tv/playlist/amg01448-samsungin-cnnnow-samsungin/playlist.m3u8
 
 
-#EXTINF:-1,47. DW English HD
+#EXTINF:-1,DW English HD
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
