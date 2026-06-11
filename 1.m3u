@@ -7,22 +7,32 @@ https://playztv-apps.pages.dev/star-jalsha/index.m3u8
 #EXTINF:-1,Star Jalsha 3
 https://tyr.zibobdixserver.top/hls/StarJalshaHD.m3u8
 
-#EXTINF:-1,ABP Ananda
-https://amg01448-samsungin-abpananda-samsungin-4npqg.amagi.tv/playlist/amg01448-samsungin-abpananda-samsungin/playlist.m3u8
+#EXTINF:-1,zee Bangla 
+https://tvsen6.aynaott.com/ZeeBangla/index.m3u8
 
-#EXTINF:-1,Tom & Jerry TV
-https://live20.bozztv.com/giatvplayout7/giatv-208314/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1,Doraemon TV
-https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1,Mr Bean Animated
-https://amg00627-amg00627c29-rakuten-it-3989.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanitcc-rakutenit/playlist.m3u8
-#EXTINF:-1,Cartoon Network
-https://tvsen5.aynaott.com/cartoonnetwork/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/x8sgjYtH/resized-300x180-ffffff-12.jpg" group-title="Indian-Bangla", Zee Bangla 2
+http://starshare.cx:80/PeH5kPWFfG/infamous7funny/435
+#EXTINF:-1,zee Bangla 3
+http://starshare.cx:80/PeH5kPWFfG/infamous7funny/23305
+
+#EXTINF:-1,Zee Bangla 4
+http://103.159.180.34:5001/live/625.m3u8
+#EXTINF:-1, Star sports 1
+http://198.195.239.50:8095/SonyTenSports5/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1,Gopal Bhar TV
 https://live20.bozztv.com/giatvplayout7/giatv-209611/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1,Enter10 Bangla
 https://amg01448-samsungin-enterr10bangla-samsungin-ad-gg.amagi.tv/playlist/amg01448-samsungin-enterr10bangla-samsungin/playlist.m3u8
+
+#EXTINF:-1,T sport
+https://playztv-apps.pages.dev/tsports/index.m3u8
+
+#EXTINF:-1,T Sports HD
+https://tvsen7.aynaott.com/tsports-hd/tracks-v1a1/mono.ts.m3u8
+
+
 #EXTINF:-1,Jumuna TV
 https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8
 #EXTINF:-1,Somoy TV
@@ -50,21 +60,21 @@ https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/index.m3u8
 #EXTINF:-1,Deepto
 https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/index.m3u8
 #EXTINF:-1,BPK TV 1712
-https://owrcovcrpy.gpcdn.net/bpk-tv/1712/output/index.m3u8
+#https://owrcovcrpy.gpcdn.net/bpk-tv/1712/output/index.m3u8
 #EXTINF:-1,BPK TV 1713
 https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8
 #EXTINF:-1,BPK TV 1714
-https://owrcovcrpy.gpcdn.net/bpk-tv/1714/output/index.m3u8
+#https://owrcovcrpy.gpcdn.net/bpk-tv/1714/output/index.m3u8
 #EXTINF:-1,Bangla Vision 
 https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8
 #EXTINF:-1,N TV
 https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8
 #EXTINF:-1,BPK TV 1717
-https://owrcovcrpy.gpcdn.net/bpk-tv/1717/output/index.m3u8
+#https://owrcovcrpy.gpcdn.net/bpk-tv/1717/output/index.m3u8
 #EXTINF:-1,BPK TV 1718
-https://owrcovcrpy.gpcdn.net/bpk-tv/1718/output/index.m3u8
+#https://owrcovcrpy.gpcdn.net/bpk-tv/1718/output/index.m3u8
 #EXTINF:-1,BPK TV 1719
-https://owrcovcrpy.gpcdn.net/bpk-tv/1719/output/index.m3u8
+#https://owrcovcrpy.gpcdn.net/bpk-tv/1719/output/index.m3u8
 #EXTINF:-1,SA TV
 https://owrcovcrpy.gpcdn.net/bpk-tv/1720/output/index.m3u8
 #EXTINF:-1,ATN BANGLA
@@ -132,26 +142,11 @@ https://tvsen6.aynaott.com/independenttv/tracks-v1a1/mono.ts.m3u8
 https://tvsen6.aynaott.com/atnnews/tracks-v1a1/mono.ts.m3u8
 
 
-#EXTINF:-1,zee Bangla 
-https://tvsen6.aynaott.com/ZeeBangla/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/x8sgjYtH/resized-300x180-ffffff-12.jpg" group-title="Indian-Bangla", Zee Bangla 2
-http://starshare.cx:80/PeH5kPWFfG/infamous7funny/435
-#EXTINF:-1,zee Bangla 3
-http://starshare.cx:80/PeH5kPWFfG/infamous7funny/23305
-
-#EXTINF:-1,Zee Bangla 4
-http://103.159.180.34:5001/live/625.m3u8
-#EXTINF:-1, Star sports 1
-http://198.195.239.50:8095/SonyTenSports5/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Sports", MAX  HD
 https://webott.viatv.com.np/v0t1/CineplexHD.stream/chunks.m3u8
 #EXTINF:-1, IPL 
 http://kstv.us:8080/live/qdxkt3R5pH/5118349267/15965.m3u8
-#EXTINF:-1,T sport
-https://playztv-apps.pages.dev/tsports/index.m3u8
-
 
 #EXTINF:-1,FIFA Plus
 https://37b4c228.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWZyX0ZJRkFQbHVzRnJlbmNoX0hMUw/6f5437c5-e015-4754-8476-c8c6d27d3a55/1.m3u8
@@ -159,8 +154,6 @@ https://37b4c228.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFr
 #EXTINF:-1,Willow TV
 https://tvsen5.aynaott.com/willowhd/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1,T Sports HD
-https://tvsen7.aynaott.com/tsports-hd/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1,4. Goal TV HD
 https://streams2.sofast.tv/sofast/goaltv/goaltv_3500k.m3u8
@@ -181,3 +174,12 @@ https://amg01448-samsungin-cnnnow-samsungin-4npqg.amagi.tv/playlist/amg01448-sam
 
 #EXTINF:-1,DW English HD
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+
+#EXTINF:-1,Tom & Jerry TV
+https://live20.bozztv.com/giatvplayout7/giatv-208314/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1,Doraemon TV
+https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1,Mr Bean Animated
+https://amg00627-amg00627c29-rakuten-it-3989.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanitcc-rakutenit/playlist.m3u8
+#EXTINF:-1,Cartoon Network
+https://tvsen5.aynaott.com/cartoonnetwork/tracks-v1a1/mono.ts.m3u8
