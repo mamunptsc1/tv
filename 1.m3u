@@ -17,9 +17,9 @@ http://starshare.cx:80/PeH5kPWFfG/infamous7funny/23305
 
 #EXTINF:-1,Zee Bangla 4
 http://103.159.180.34:5001/live/625.m3u8
-#EXTINF:-1, Star sports 1
-http://198.195.239.50:8095/SonyTenSports5/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1,SONY MAX SD
+http://103.158.133.62:8080/sonymax/index.m3u8
 #EXTINF:-1,Gopal Bhar TV
 https://live20.bozztv.com/giatvplayout7/giatv-209611/tracks-v1a1/mono.ts.m3u8
 
@@ -169,6 +169,8 @@ https://tvsen6.aynaott.com/SportsGrid/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1,Star Sports 1 HD
 https://tvsen7.aynaott.com/sspts1/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1, Star sports 1
+http://198.195.239.50:8095/SonyTenSports5/tracks-v1a1/mono.m3u8
 
 
 #EXTINF:-1,CNN Now
