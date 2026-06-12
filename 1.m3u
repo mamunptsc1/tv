@@ -45,10 +45,31 @@ https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
 #EXTINF:-1 tvg-id="WIN_Sports" tvg-name="WIN Sports" tvg-logo="https://i.postimg.cc/Y903JSq8/20260612-095648.jpg" group-title="FIFA",WIN Sports
 https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8
 
+
+#EXTINF:-1 tvg-chno="1433" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00287G7K.png?lock=720x540" group-title="Bengali",Zee Bangla Sonar (FIFA BANGLA COMMENTARY)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=fbbfd9ce4bbe4d818b16df7dfe89f05b:1e96d0f88ef740e982d6f6105721c8bc
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeebanglacinema/default/manifest.mpd
+
+#EXTINF:-1 tvg-logo="https://carboncredits.com/wp-content/uploads/2025/09/shutterstock_2306088965-e1757112807302.jpg"group-title="Football World Cup 2026" group-title="",Football World Cup 2026 link hindi
+http://starhub.pro/live/farhat-3379/67897-913379/741567.ts
 #EXTINF:-1 tvg-logo="https://carboncredits.com/wp-content/uploads/2025/09/shutterstock_2306088965-e1757112807302.jpg"group-title="Football World Cup 2026" group-title="",Football World Cup 2026 (4K)
 https://rgkkw.live:443/live/1Aoen7elp5/IgMJ60tmAa/688290.ts
 
 
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/0NYVSnkr/Gemini-Generated-Image-ykkw2cykkw2cykkw.png" group-title="FIFA WC 2026",CIGNAL TV
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=549ab7cd35a64bb6bb479ecead04d69d:829799ed534d11fcadeb4b192467e050
+https://qp-pldt-live-bpk-ucd-prod.akamaized.net/bpk-tv/ch299/default/index.mpd
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/0NYVSnkr/Gemini-Generated-Image-ykkw2cykkw2cykkw.png" group-title="FIFA WC 2026",FRANCE TV
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=433ffba670963e70857859a9dff4be04:51ede3a821229fe81e71282c8eff80e3
+https://origin-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short-hd.mpd
 
 
 #EXTINF:-1 tvg-logo="https://carboncredits.com/wp-content/uploads/2025/09/shutterstock_2306088965-e1757112807302.jpg"group-title="Football World Cup 2026" group-title="",Football World Cup 2026 (4K) 2
