@@ -5,11 +5,11 @@ https://tvsen3.aynascope.net/n64PH4YL/index.m3u8
 #EXTINF:-1,Star Jalsha 2
 https://playztv-apps.pages.dev/star-jalsha/index.m3u8
 #EXTINF:-1,Star Jalsha 3
-https://tyr.zibobdixserver.top/hls/StarJalshaHD.m3u8
+https://yupptvcatchupire.yuppcdn.net/preview/starjalsha/1800.m3u8
 
 #EXTINF:-1,zee Bangla 
-https://tvsen6.aynaott.com/ZeeBangla/index.m3u8
-
+#https://tvsen6.aynaott.com/ZeeBangla/index.m3u8
+http://main.epgmaker.com/live/y49sz6KMQs/6115263489/536.ts
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/x8sgjYtH/resized-300x180-ffffff-12.jpg" group-title="Indian-Bangla", Zee Bangla 2
 http://starshare.cx:80/PeH5kPWFfG/infamous7funny/435
 #EXTINF:-1,zee Bangla 3
@@ -92,6 +92,52 @@ https://tvsen5.aynaott.com/PtvSports/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1, backup 
 http://103.158.133.62:8080/live/index.m3u8
+# ─────────── Sports───────────
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", T Sports
+http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/130714.ts
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tampad
+https://premierleagpl23.akamaized.net/hls/live/2107108/tapmad-P2s6L_FiN@L-UrU/master.m3u8
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Win Sports
+https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8
+
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Bein Sports
+https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Dazn Direct
+https://1nyaler.streamhostingcdn.top/stream/94/index.m3u8
+
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TVP Sports
+https://1nyaler.streamhostingcdn.top/stream/89/index.m3u8
+
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", D Sports
+https://1nyaler.streamhostingcdn.top/stream/106/index.m3u8
+
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TYC Sports
+https://1nyaler.streamhostingcdn.top/stream/84/index.m3u8
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tv Azteca
+https://1nyaler.streamhostingcdn.top/stream/117/index.m3u8
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tudn Sports
+https://1nyaler.streamhostingcdn.top/stream/52/index.m3u8
+
 
 #EXTINF:-1,Jumuna TV
 https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8
