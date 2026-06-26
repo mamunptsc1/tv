@@ -7,6 +7,13 @@
 https://xfireflix.my.id/mac.php?id=908682.m3u8
 #EXTINF:-1,Star Jalsha 3
 https://tvsen4.aynaott.com/n64PH4YL/index.m3u8
+
+#EXTINF:-1 tvg-id="StarJalsa4K" tvg-name="Star Jalsa 4K" tvg-logo="" group-title="Bangla",Star Jalsa 4K
+http://fastshare1.com:8080/live/931461266/374152877/198.ts?RKDYIPTV&token=rkdyiptv
+
+#EXTINF:-1 tvg-id="ZeeBangla4K" tvg-name="Zee Bangla 4K" tvg-logo="" group-title="Bangla",Zee Bangla 4K
+http://fastshare1.com:8080/live/931461266/374152877/98881.ts?RKDYIPTV&token=rkdyiptv
+
 #EXTINF:-1,zee Bangla HD
 #http://217.20.112.199:8080/maamovies/index.m3u8
 #EXTINF:-1,zee Bangla 
@@ -20,15 +27,9 @@ http://starshare.cx:80/PeH5kPWFfG/infamous7funny/23305
 #EXTINF:-1,Zee Bangla 4
 http://103.159.180.34:5001/live/625.m3u8
 
-# Bangla Entertainment
-#EXTINF:-1 tvg-id="ZeeBangla4K" tvg-name="Zee Bangla 4K" tvg-logo="" group-title="Bangla",Zee Bangla 4K
-http://fastshare1.com:8080/live/931461266/374152877/98881.ts?RKDYIPTV&token=rkdyiptv
-
 #EXTINF:-1 tvg-id="ColorsBangla4K" tvg-name="Colors Bangla 4K" tvg-logo="" group-title="Bangla",Colors Bangla 4K
 http://fastshare1.com:8080/live/931461266/374152877/98882.ts?RKDYIPTV&token=rkdyiptv
 
-#EXTINF:-1 tvg-id="StarJalsa4K" tvg-name="Star Jalsa 4K" tvg-logo="" group-title="Bangla",Star Jalsa 4K
-http://fastshare1.com:8080/live/931461266/374152877/198.ts?RKDYIPTV&token=rkdyiptv
 
 #EXTINF:-1 tvg-id="JalsaMovies4K" tvg-name="Jalsa Movies 4K" tvg-logo="" group-title="Bangla",Jalsa Movies 4K
 http://fastshare1.com:8080/live/931461266/374152877/425.ts?RKDYIPTV&token=rkdyiptv
@@ -36,8 +37,10 @@ http://fastshare1.com:8080/live/931461266/374152877/425.ts?RKDYIPTV&token=rkdyip
 # Movies
 #EXTINF:-1 tvg-id="SonyMax4K" tvg-name="Sony Max 4K" tvg-logo="" group-title="Movies",Sony Max 4K
 http://fastshare1.com:8080/live/931461266/374152877/98857.ts?RKDYIPTV&token=rkdyiptv
+#EXTINF:-1 tvg-id="ZeeCinema4K" tvg-name="Zee Cinema 4K" tvg-logo="" group-title="Movies",Zee Cinema 4K
+http://fastshare1.com:8080/live/931461266/374152877/98860.ts?RKDYIPTV&token=rkdyiptv
+
 #EXTINF:-1,SONG
-#http://103.158.133.62:8080/sonymax/index.m3u8
 https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1,Gopal Bhar TV
 https://live20.bozztv.com/giatvplayout7/giatv-209611/tracks-v1a1/mono.ts.m3u8
@@ -47,8 +50,7 @@ https://amg01448-samsungin-enterr10bangla-samsungin-ad-gg.amagi.tv/playlist/amg0
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/0rPdpW9/MB-TV.jpg" group-title="BANGLA",Movie Bangla TV
 http://alvetv.com/moviebanglatv/8080/index.m3u8
-#EXTINF:-1, movie 
-https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeecinemahd/default/manifest.mpd
+
 
 #EXTINF:-1,Jumuna TV
 https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8
@@ -64,7 +66,7 @@ https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8
 #EXTINF:-1,ATN NEWS
 https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8
 #EXTINF:-1,BTV
-https://owrcovcrpy.gpcdn.net/bpk-tv/1707/output/index.m3u8
+#https://owrcovcrpy.gpcdn.net/bpk-tv/1707/output/index.m3u8
 #EXTINF:-1,NEWS24
 https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8
 #EXTINF:-1,BTV
@@ -117,8 +119,14 @@ http://114.130.57.233:8080/manik-kutta-moharaza-kuttar-baccha-t.me/tvserverhd/vi
 http://212.102.34.8:9080/AndFlixHD/video.m3u8
 
 
+#EXTINF:-1 tvg-id="TSportsHD" tvg-name="T Sports HD" tvg-logo="" group-title="Sports",T Sports HD
+http://fastshare1.com:8080/live/931461266/374152877/18452.ts?RKDYIPTV&token=rkdyiptv
 
-#EXTINF:-1, group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", 
+#EXTINF:-1 tvg-id="PTV4K" tvg-name="PTV 4K" tvg-logo="" group-title="Sports",PTV 4K
+http://fastshare1.com:8080/live/931461266/374152877/89.ts?RKDYIPTV&token=rkdyiptv
+
+
+#EXTINF:-1, BTV 
 http://198.195.239.50:8095/btv/tracks-v1a1/mono.m3u8
 
 
