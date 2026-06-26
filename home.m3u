@@ -121,7 +121,7 @@ http://212.102.34.8:9080/AndFlixHD/video.m3u8
 
 
 #EXTINF:-1 tvg-id="TSportsHD" tvg-name="T Sports HD" tvg-logo="" group-title="Sports",T Sports HD
-http://fastshare1.com:8080/live/931461266/374152877/18452.ts?RKDYIPTV&token=rkdyiptv
+https://kazimmt.ami.bd/playlist/TF/TF-1.m3u8
 
 #EXTINF:-1 tvg-id="PTV4K" tvg-name="PTV 4K" tvg-logo="" group-title="Sports",PTV 4K
 http://fastshare1.com:8080/live/931461266/374152877/89.ts?RKDYIPTV&token=rkdyiptv
