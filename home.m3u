@@ -15,10 +15,12 @@ https://tvsen4.aynaott.com/n64PH4YL/index.m3u8
 #http://fastshare1.com:8080/live/931461266/374152877/98881.ts?RKDYIPTV&token=rkdyiptv
 
 #EXTINF:-1,zee Bangla HD
-#http://217.20.112.199:8080/maamovies/index.m3u8
+#
+
 #EXTINF:-1,zee Bangla 
 #https://tvsen6.aynaott.com/ZeeBangla/index.m3u8
 http://main.epgmaker.com/live/y49sz6KMQs/6115263489/536.ts
+
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/x8sgjYtH/resized-300x180-ffffff-12.jpg" group-title="Indian-Bangla", Zee Bangla 2
 http://starshare.cx:80/PeH5kPWFfG/infamous7funny/435
 #EXTINF:-1,zee Bangla 3
