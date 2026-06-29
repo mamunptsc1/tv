@@ -130,4 +130,7 @@ http://fastshare1.com/live/1Aoen7elp5/IgMJ60tmAa/745269.ts
 #EXTINF:-1, BTV 
 http://198.195.239.50:8095/btv/tracks-v1a1/mono.m3u8
 
-
+#EXTINF:-1, t sport
+https://tv.beyondtaxconsultants.com/api/proxy?url=http://198.195.239.50:8095/tsports/index.m3u8
+#EXTINF:-1, t sport 
+http://198.195.239.50:8095/tsports/index.m3u8
