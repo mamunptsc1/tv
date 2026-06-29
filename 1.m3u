@@ -1,5 +1,9 @@
 #EXTM3U
 # ─────────── Sports───────────
+#EXTINF:-1, t sport
+https://tv.beyondtaxconsultants.com/api/proxy?url=http://198.195.239.50:8095/tsports/index.m3u8
+#EXTINF:-1, t sport 
+http://198.195.239.50:8095/tsports/index.m3u8
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", BRAZIL VS JAPAN 
 http://114.130.57.233:8080/manik-kutta-moharaza-kuttar-baccha-t.me/tvserverhd/video.m3u8?token=manik-kuttar-baccha-t.me/tvserverhd
